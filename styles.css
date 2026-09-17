@@ -648,6 +648,29 @@ html[data-theme="apple"] .section-heading h2 {
   line-height: .98;
 }
 
+html[data-theme="apple"] .case-source-note {
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  gap: 32px;
+  margin: -20px 0 72px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(29, 29, 31, .12);
+}
+html[data-theme="apple"] .case-source-note > span {
+  color: #86868b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+html[data-theme="apple"] .case-source-note > p {
+  max-width: 760px;
+  margin: 0;
+  color: #515154;
+  font-size: clamp(16px, 1.45vw, 19px);
+  line-height: 1.72;
+  text-wrap: pretty;
+}
+
 html[data-theme="apple"] .case-card {
   min-height: 580px;
   padding: 40px;
@@ -865,6 +888,13 @@ html[data-theme="apple"] .theme-intro button { border: 0; color: #fff; backgroun
   html[data-theme="apple"] .hero h1 { font-size: clamp(60px, 18vw, 96px); }
   html[data-theme="apple"] .hero-lead { font-size: 19px; }
   html[data-theme="apple"] .case-index { padding: 115px 20px 130px; }
+  html[data-theme="apple"] .case-source-note {
+    display: block;
+    margin: -20px 0 48px;
+    padding-top: 18px;
+  }
+  html[data-theme="apple"] .case-source-note > span { display: block; margin-bottom: 12px; }
+  html[data-theme="apple"] .case-source-note > p { font-size: 16px; line-height: 1.68; }
   html[data-theme="apple"] .case-card { min-height: 500px; padding: 28px; }
   html[data-theme="apple"] .case-card-college { min-height: 430px; }
   html[data-theme="apple"] .case-cover { min-height: 86svh; padding: 100px 22px 74px; }
