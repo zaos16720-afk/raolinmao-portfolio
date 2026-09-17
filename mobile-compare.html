@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D版手机端｜上一版与当前版对照</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #1d1d1f;
+      background: #e8e8ed;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    header { max-width: 920px; margin: 0 auto; padding: 28px 20px 16px; }
+    h1 { margin: 0; font-size: 26px; letter-spacing: -.03em; }
+    p { margin: 8px 0 0; color: #6e6e73; font-size: 14px; }
+    main { display: flex; justify-content: center; gap: 28px; padding: 16px 20px 48px; }
+    section { width: 397px; }
+    h2 { margin: 0 0 10px; font-size: 15px; font-weight: 650; }
+    .phone {
+      width: 397px;
+      padding: 10px;
+      border: 1px solid rgba(29,29,31,.16);
+      border-radius: 30px;
+      background: #1d1d1f;
+      box-shadow: 0 22px 55px rgba(0,0,0,.16);
+    }
+    iframe {
+      display: block;
+      width: 375px;
+      height: 812px;
+      border: 0;
+      border-radius: 21px;
+      background: #fff;
+    }
+    @media (max-width: 860px) {
+      main { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>D版手机端对照</h1>
+    <p>两个窗口都是 375 × 812，可分别在窗口内上下滑动。</p>
+  </header>
+  <main>
+    <section>
+      <h2>上一版 D</h2>
+      <div class="phone"><iframe src="index.html?theme=apple" title="上一版D手机端"></iframe></div>
+    </section>
+    <section>
+      <h2>当前正式版</h2>
+      <div class="phone"><iframe src="index.html?theme=apple&amp;mode=production" title="当前正式版手机端"></iframe></div>
+    </section>
+  </main>
+</body>
+</html>

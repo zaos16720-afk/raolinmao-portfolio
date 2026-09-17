@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="饶林茂个人简历网页预览。">
+  <title>饶林茂｜个人简历</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <header class="resume-nav">
+    <a class="back-link" href="index.html?theme=apple" data-back-link aria-label="返回作品集">
+      <span aria-hidden="true">‹</span> 返回作品集
+    </a>
+    <div class="resume-title">
+      <strong>饶林茂</strong>
+      <span>个人简历 · 2页</span>
+    </div>
+    <a class="download-link" href="assets/docs/rao-linmao-resume.pdf" download="饶林茂-个人简历.pdf">
+      下载 PDF <span aria-hidden="true">↓</span>
+    </a>
+  </header>
+
+  <main class="resume-viewer">
+    <section class="viewer-intro" aria-labelledby="resume-heading">
+      <p>RESUME / 2026</p>
+      <h1 id="resume-heading">个人简历</h1>
+      <span>网页高清预览 · 可缩放阅读</span>
+    </section>
+
+    <div class="page-stack">
+      <figure class="resume-page">
+        <img src="assets/docs/resume-preview-1.png" alt="饶林茂个人简历第1页" loading="eager">
+        <figcaption>01 / 02</figcaption>
+      </figure>
+      <figure class="resume-page">
+        <img src="assets/docs/resume-preview-2.png" alt="饶林茂个人简历第2页" loading="lazy">
+        <figcaption>02 / 02</figcaption>
+      </figure>
+    </div>
+
+    <footer class="resume-footer">
+      <span>饶林茂 · 招聘交付 · 渠道增长 · 从0到1</span>
+      <a href="assets/docs/rao-linmao-resume.pdf" download="饶林茂-个人简历.pdf">保存原始 PDF</a>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const allowed = new Set(['practical', 'cinematic', 'hyper', 'apple']);
+      const params = new URLSearchParams(location.search);
+      const requested = params.get('theme');
+      const theme = allowed.has(requested) ? requested : 'apple';
+      const production = params.get('mode') === 'production';
+      document.querySelector('[data-back-link]').href = `index.html?theme=${encodeURIComponent(theme)}${production ? '&mode=production' : ''}`;
+    })();
+  </script>
+</body>
+</html>

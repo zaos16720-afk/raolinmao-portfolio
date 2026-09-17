@@ -1,0 +1,207 @@
+@page {
+  size: A4 landscape;
+  margin: 10mm;
+}
+
+@media print {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  html,
+  body {
+    width: auto !important;
+    min-width: 0 !important;
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.5pt !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body,
+  main,
+  .case-shell,
+  .case-chapters {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  .site-nav,
+  .scroll-progress,
+  #fx-canvas,
+  .noise,
+  .aurora,
+  .hero-ghost,
+  .hero-scroll,
+  .case-start,
+  dialog,
+  .contact-dialog,
+  .image-lightbox {
+    display: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero,
+  .case-index,
+  .case-cover,
+  .chapter,
+  .tool-epilogue,
+  .closing {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: 180mm !important;
+    margin: 0 !important;
+    padding: 12mm 14mm !important;
+    break-after: page;
+    page-break-after: always;
+    overflow: hidden !important;
+  }
+
+  .hero,
+  .case-cover,
+  .closing {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  .hero h1 {
+    font-size: 34pt !important;
+    line-height: 1.05 !important;
+  }
+
+  .hero-copy,
+  .hero-lead,
+  .section-heading,
+  .case-cover-copy,
+  .case-cover-proof,
+  .closing-copy,
+  .closing blockquote {
+    max-width: 230mm !important;
+  }
+
+  .case-index {
+    display: none !important;
+  }
+
+  .case-cover {
+    background-position: center !important;
+  }
+
+  .case-cover-copy h2 {
+    font-size: 36pt !important;
+  }
+
+  .chapter {
+    display: grid !important;
+    min-height: 176mm !important;
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr) !important;
+    grid-template-rows: auto 1fr !important;
+    align-items: start !important;
+    gap: 7mm 10mm !important;
+  }
+
+  .chapter-mark {
+    grid-column: 1 / -1 !important;
+    position: static !important;
+    font-size: 24pt !important;
+    line-height: 1 !important;
+    opacity: 0.32 !important;
+  }
+
+  .story-copy {
+    position: static !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-self: start !important;
+  }
+
+  .story-copy h1,
+  .story-copy h2 {
+    margin: 0 0 5mm !important;
+    font-size: 23pt !important;
+    line-height: 1.18 !important;
+  }
+
+  .story-copy p {
+    margin: 0 0 3mm !important;
+    font-size: 10.5pt !important;
+    line-height: 1.55 !important;
+  }
+
+  .key-line {
+    padding: 3mm 0 3mm 4mm !important;
+    border-left: 2.5pt solid #087df0 !important;
+    font-weight: 650 !important;
+  }
+
+  .evidence,
+  .tool-visual {
+    position: static !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-self: start !important;
+    break-inside: auto !important;
+  }
+
+  .evidence img,
+  .tool-visual img {
+    max-width: 100% !important;
+    max-height: 145mm !important;
+    object-fit: contain !important;
+    box-shadow: none !important;
+  }
+
+  .learning-pair,
+  .rank-grid,
+  .award-grid,
+  .process-pair,
+  .chat-column,
+  .evidence-grid,
+  .tool-layout {
+    gap: 3mm !important;
+  }
+
+  .rank-grid img,
+  .award-grid img,
+  .process-pair img,
+  .chat-column img,
+  .evidence-grid img {
+    max-height: 62mm !important;
+  }
+
+  .chat-column img {
+    max-height: 44mm !important;
+  }
+
+  .tool-epilogue {
+    display: grid !important;
+    grid-template-columns: 0.9fr 1.1fr !important;
+    align-items: center !important;
+    gap: 12mm !important;
+  }
+
+  .tool-copy h2,
+  .closing h2,
+  .closing blockquote {
+    font-size: 25pt !important;
+    line-height: 1.2 !important;
+  }
+
+  .closing-actions {
+    display: none !important;
+  }
+}
